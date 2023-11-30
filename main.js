@@ -82,7 +82,7 @@ function atualizaMediaFinal() {
   
     const MediaFinal = CalculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = MediaFinal;
+    document.getElementById('media-final-valor').innerHTML = MediaFinal.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = MediaFinal >= mediaFinal ? spanAprovado : spanReprovado;
 
 }
